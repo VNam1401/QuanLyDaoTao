@@ -7,7 +7,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
     <h2>Quản lý sinh viên </h2>
     <hr />
-    <button type="button" class="btn btn-info btn-lg" style="margin-bottom: 5px;" data-toggle="modal" data-target="#modalOpenAddButton">Thêm mới</button>
     <!-- Modal -->
     <div class="modal fade" id="modalOpenAddButton" role="dialog">
         <div class="modal-dialog">
@@ -100,7 +99,7 @@
                     <itemstyle wrap="false" />
                     <itemtemplate>
                         <asp:Button ID="btnSua" runat="server" Text="Sửa" CommandName="Edit" CssClass="btn btn-primary" />
-                        <asp:LinkButton ID="btnXoa" OnClientClick="return confirm('Bạn có chắc chắn muốn xóa sinh viên này không ?')"
+                        <asp:LinkButton ID="btnXoa" OnClientClick="return confirm('Bạn có muốn xóa sinh viên này không ?')"
                             runat="server" CommandName="Delete" CssClass="btn btn-danger">
                             <i class="bi bi-trash"></i>Xóa
                         </asp:LinkButton>
@@ -110,16 +109,7 @@
                         <asp:Button ID="Button1" runat="server" Text="Hủy" CssClass="btn btn-warning" CommandName="Cancel" />
                     </edititemtemplate>
                 </asp:TemplateField>
-            </columns>
-            <headerstyle backcolor="#0066cc" forecolor="#ffffff" />
-            <pagerstyle horizontalalign="Center" cssclass="pager-style" />
+            </Columns>
         </asp:GridView>
     </asp:Panel>
 </asp:Content>
-<asp:Button ID="btnCancel" runat="server" Text="Hủy" CssClass="btn btn-warning" CommandName="Cancel" />
-</EditItemTemplate>
-                </asp:TemplateField>
-            </Columns>
-            <headerstyle backcolor="#0066cc" forecolor="#ffffff" />
-<pagerstyle horizontalalign="Center" cssclass="pager-style" />
-</asp:GridView>

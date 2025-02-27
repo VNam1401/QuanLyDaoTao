@@ -61,10 +61,6 @@
             </div>
         </EmptyDataTemplate>
     </asp:GridView>
-
         </ContentTemplate>
-
     </asp:UpdatePanel>
-    
-    
 </asp:Content>
